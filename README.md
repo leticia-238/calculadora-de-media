@@ -1,2 +1,3 @@
-# Calculadora-de-media
- Projeto simples para aprendizado
+# Calculadora de média
+
+Projeto simples para aprendizado pessoal
