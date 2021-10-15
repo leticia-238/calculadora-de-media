@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de média</title>
+    <!--Style-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flexbox">
+    <img src="assets/images/markus-spiske-iar-afB0QQw-unsplash.jpg" />
+    <header><h1>Calculadora de média</h1></header>
+    <main>
+      <section class="entries">
+        <div class="container">
+          <label for="number">Insira aqui o valor:</label>
+          <input type="number" id="number" placeholder="Digite aqui:" />
+        </div>
+        <div class="flexbox container buttons">
+          <button type="button" id="show_weight">Inserir peso</button>
+          <div class="hidden container">
+            <label for="weight">Insira o peso:</label
+            ><input
+              type="number"
+              id="weight"
+              placeholder="Digite aqui:"
+              value="1"
+            />
+          </div>
+          <button type="button" id="add_value">Adicionar valor</button>
+        </div>
+      </section>
+      <section class="hidden table">
+        <ol class="flexbox container">
+          <li>
+            <h2>Valores</h2>
+            <h2>pesos</h2>
+          </li>
+        </ol>
+        <div class="container flexbox buttons">
+          <button type="button" id="calc">calcular</button>
+          <button type="button" id="clean">limpar</button>
+        </div>
+      </section>
+      <section class="hidden container" id="result">
+        <h2></h2>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

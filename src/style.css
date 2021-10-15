@@ -1,0 +1,147 @@
+/*=================== RESET ==================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*--- Remove as setas do input number----*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+/*-------------------------------*/
+ol {
+  list-style-type: none;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+/*================== Layout =================*/
+.flexbox {
+  display: flex;
+}
+.hidden {
+  display: none;
+}
+.container {
+  margin-bottom: 1rem;
+}
+.buttons {
+  align-items: baseline;
+  justify-content: space-between;
+}
+/*================== Base ===================*/
+:root {
+  --family: 'Poppins', sans-serif;
+  --text-color: hsl(188, 48%, 36%);
+}
+body {
+  background: #a1dae0;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+img {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+header h1 {
+  font: 600 1.5rem var(--family);
+  text-align: center;
+  color: white;
+  margin: 1rem;
+}
+
+main {
+  background-color: #b2ebf2;
+  padding: 1rem 1rem 0;
+  box-shadow: 10px 10px 10px hsl(186, 100%, 25%);
+  max-width: 90%;
+}
+
+/*================= General ===================*/
+label {
+  font: 600 0.8rem var(--family);
+  color: var(--text-color);
+  line-height: 1.6rem;
+  margin-right: 1rem;
+}
+input {
+  font: 400 0.8rem var(--family);
+  color: var(--text-color);
+  background-color: #d2f7fc;
+  line-height: 1.4rem;
+}
+button {
+  font: 600 0.8rem var(--family);
+  color: #039be5;
+  background-color: #81d4fa;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+}
+
+button:hover {
+  transform: scale(1.1, 1.1);
+  background-color: #80deea;
+  color: #00acc1;
+}
+
+button:active {
+  transform: scale(1, 1);
+}
+
+h2 {
+  color: var(--text-color);
+  background-color: #d2f7fc;
+}
+/*================= Sections ===================*/
+.entries input {
+  padding: 0 0.5rem;
+}
+
+.entries button#add_value {
+  margin-left: 1rem;
+}
+
+.table ol {
+  flex-wrap: wrap;
+}
+.table ol li {
+  padding: 0.2rem;
+}
+.table input,
+.table h2 {
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  border-color: rgb(137, 230, 225);
+}
+.table input {
+  display: block;
+  text-align: center;
+}
+.table h2 {
+  font: 500 0.8rem var(--family);
+  line-height: 1.4rem;
+  padding: 0 0.5rem;
+}
+
+#result h2 {
+  font: 500 1rem var(--family);
+  text-align: center;
+}
